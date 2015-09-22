@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* ########## Reset CSS ########## */
+
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* HTML5 display reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ########## Reset CSS Ends ########## */
+
+body {
+		width: 480px;
+		margin: 100px auto 0;
+}
+
+
+	
+div.videoSlider {
+	overflow: hidden;
+	height: 360px;
+	width: inherit;
+}
+
+.videoSlider ul {
+	width: 1950px;
+	list-style: none;
+}
+
+.videoSlider ul li {
+	display: inline-block;
+	float: left;
+	
+}
+
+div.thumbnail {
+
+	margin-top: 5px;
+	height: 50px;
+	width: 480px;
+	
+}
+
+div.thumbnail ul {
+	display: block;
+	width: 220px;
+	list-style: none;
+	margin: 0 auto;
+	
+}
+
+div.thumbnail ul li {
+
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+div.thumbnail ul li img {
+
+	height: 50px;
+	width: 50px;
+
+}
+
+.videoParameters {
+width : 480px;
+height: 360px;
+}

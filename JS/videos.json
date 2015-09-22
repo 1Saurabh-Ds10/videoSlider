@@ -1,0 +1,29 @@
+[
+		{
+			"poster": "Images/1.jpg",
+			"sourcemp4": "Videos/1.mp4",
+			"sourceogg": "Videos/1.ogv",
+			"sourcewebm": "Videos/1.webm"
+			
+		},
+		{
+			"poster": "Images/2.jpg",
+			"sourcemp4": "Videos/2.mp4",
+			"sourceogg": "Videos/2.ogv",
+			"sourcewebm": "Videos/2.webm"
+			
+		},
+		{
+			"poster": "Images/3.jpg",
+			"sourcemp4": "Videos/3.mp4",
+			"sourceogg": "Videos/3.ogv",
+			"sourcewebm": "Videos/3.webm"
+			
+		},
+		{
+			"poster": "Images/4.jpg",
+			"sourcemp4": "Videos/4.mp4",
+			"sourceogg": "Videos/4.ogv",
+			"sourcewebm": "Videos/4.webm"
+		}
+]

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Video Slider</title>
+	<link rel="stylesheet" href="styles.css" media="all">
+	
+	<!--[if lt IE 9]>
+		<script src="JS/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<section class="content">
+	
+		<div class="videoSlider">
+		
+			<ul>
+				<script id="template" type="text/x-handlebars-template">
+				{{#each this}}
+				
+				<li>
+				
+					<video class="video videoParameters" poster={{{poster}}} controls width="480" height="360">
+					<source src={{{sourcemp4}}} type="video/mp4">
+					<source src={{{sourceogg}}} type="video/ogg">
+					<source src={{{sourcewebm}}} type="video/webm">
+					</video>
+				</li>
+				
+				{{/each}}
+				</script>	
+			</ul>
+		
+		</div>
+	
+		<div class="thumbnail">
+			<ul>
+				<script id="subTemplate" type="text/x-handlebars-template">
+				{{#each this }}
+				<li>
+					<img src={{{poster}}} alt="image" />
+				</li>
+				{{/each}}
+				</script>
+			</ul>
+		</div>
+	
+	</section>
+	
+	<script src="JS/jQuery.js"></script>
+	<script src="JS/jQuery-easing.js"></script>
+	
+	<script src="JS/handlebars.js"></script>
+	<script src="JS/videoSlider.js"></script>
+
+	
+	<script type="text/javascript">
+
+	
+	(function($) {
+
+
+	Slider.init({
+		template: $.trim($('#template').html()),
+		subTemplate: $.trim($('#subTemplate').html()),
+		container: $('div.videoSlider').find('ul'),
+		subContainer: $('.thumbnail').find('ul'),
+		easingEffect: 'easeOutExpo',
+		delayEffect: '600'
+		
+	});
+	
+
+
+	})(jQuery);
+
+
+
+	</script>
+
+	
+</body>
+</html>

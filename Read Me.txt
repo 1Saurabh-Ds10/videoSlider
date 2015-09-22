@@ -1,0 +1,8 @@
+Video Slider 2013
+
+To make it work, put the images in 'Images' folder, that you want to use as thumbnails & videos in 'Videos' folder.
+
+Add the images & videos name in JS -> videos.json file.
+
+
+cheers 
